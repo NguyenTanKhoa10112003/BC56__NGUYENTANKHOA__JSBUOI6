@@ -19,7 +19,17 @@
   </head>
   <body>
     <div class="container">
-      <button class="btn btn-success" onclick="taoDiv()">Tạo Div</button>
+      <div class="form-group">
+        <label for="">Số nguyên</label>
+        <input
+          type="text"
+          class="form-control"
+          id="soNguyen"
+          placeholder="Nhập vào số nguyên"
+        />
+        <button class="btn btn-success mt-2" onclick="cacSoNguyen()">Tính các số nguyên</button>
+        <div id="result"></div>
+      </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
