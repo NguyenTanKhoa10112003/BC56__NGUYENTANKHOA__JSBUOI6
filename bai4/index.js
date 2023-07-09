@@ -1,18 +1,11 @@
 function taoDiv() {
-//   var divContainer = document.getElementById("divContainer");
-//   var input = document.getElementById("iSo").value * 1;
+  var output = document.getElementById("output");
+  output.innerHTML = "";
 
-  var output = "";
-  // b1
-  var dem = 1; // Bước nhảy
-  // b2
-  while (dem <= input) {
-    // b3
-    // var div = `<div class="alert alert-success mt-2">hello cybersoft</div>`;
-    // output += div;
-    div.textContent = i % 2 === 0 ? "Div chẵn " + i : "Div lẻ " + i;
-    // b4
-    dem++;
+  for (var i = 1; i <= 10; i++) {
+    var div = document.createElement("div");
+    div.textContent = i % 2 === 0 ? "div chẵn " + i : "div lẻ " + i;
+    div.className = i % 2 === 0 ? "even" : "odd";
+    output.appendChild(div);
   }
-  document.getElementById("result").innerHTML = output;
 }
